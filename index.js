@@ -11,7 +11,7 @@ const users = [
     { username: "charlie", age: 35, email: "charlie@example.com" },
 ];
 
-app.get('/user', (req, res) => {
+app.get('/', (req, res) => {
 
     const { username } = req.body;
     try {
