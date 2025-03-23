@@ -13,7 +13,7 @@ const users = [
 
 app.get('/user', (req, res) => {
 
-    const { username } = req.query.body;
+    const { username } = req.body;
     try {
         const foundUser = users.find((user) => user.username === "alice");
         console.log(foundUser);
